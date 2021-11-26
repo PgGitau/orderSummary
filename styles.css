@@ -1,7 +1,128 @@
+/*GENERAL STYLES*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat display', sans-serif;
+}
+
+/*BODY STYLES*/
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    margin: 40px 0;
+}
+
+/*CARD CONTAINER STYLES*/
+.card-container {
+    /*border: .2rem solid hsl(350, 76%, 54%);*/
+    border-radius: 20px;
+    width: 33.4%;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
+.card-container .image1 {
+    height: 220px;
+    background-image: url("images/illustration-hero.svg");
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    max-width: 100%;
+}
+/*CARD TEXT STYLES*/
+.card-text {
+    text-align: center;
+    margin: 5% 0;
+    /*border: .2rem solid hsl(253, 76%, 54%);*/
+}
+.card-text h1 {
+    font-weight: 900;
+}
+.card-text p {
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+/*CARD PLAN STYLES*/
+.card-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: .2rem solid hsl(120, 76%, 54%);*/
+    width: 70%;
+    margin: auto;
+}
+.card-plan-text {
+    padding-left: 1rem;
+    /*border: 2px solid red;*/
+    margin-left: -30%;
+}
+.card-plan-text p {
+    font-weight: bold;
+}
+.card-plan button {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: hsl(223, 95%, 32%);
+    text-decoration: underline hsl(223, 95%, 32%);   
+}
+
+/*BUTTONS STYLES*/
+.buttons {
+    text-align: center;
+    margin-top: 5%;
+}
+/*payment button styles*/
+.button2 {
+    margin-bottom: 4%;
+    /*border: .2rem solid hsl(180, 3%, 6%);*/
+}
+.button2 button {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: .2rem solid hsl(245, 75%, 52%);
+    padding: .5rem 7rem;
+    font-weight: bold;
+}
+/*cancel button styles*/
+/*.button3 {
+    border: .2rem solid hsl(315, 67%, 14%);
+}*/
+.button3 button {
+    color: hsl(223, 88%, 61%);
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    padding: .5rem;
+    margin-bottom: 3%;
+}
+
+/*FOOTER STYLES*/
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-top: 13px;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/*hover styles*/
+.card-plan button:hover, .button2 button:hover, .button3 button:hover {
+    cursor: pointer;
+}
+.button2 button:hover {
+    background-color: hsl(228, 45%, 44%);
+    border:hsl(228, 45%, 44%);
+}
+.button3 button:hover {
+    color: hsl(228, 94%, 21%);
 }
